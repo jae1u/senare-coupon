@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>세븐나이츠 리버스 쿠폰 입력</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>세븐나이츠 리버스 쿠폰 입력</h1>
+    <form method="post">
+        <label for="uid">회원번호 입력</label>
+        <input type="text" id="uid" name="uid" required placeholder="회원번호(UID)">
+        <button type="submit">등록하기</button>
+    </form>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <h2>[회원 번호 확인 방법]</h2>
+    <ol>
+        <li>인게임 접속</li>
+        <li>우측 루비 보유량 하단에 있는 [설정] 메뉴 선택 (톱니바퀴 모양)</li>
+        <li>[계정] 탭 선택 시, UID에서 회원번호 확인 가능 (우측 복사 버튼을 통해 복사 가능)</li>
+    </ol>
+</body>
+
+</html>
