@@ -23,7 +23,7 @@ def redeem_coupon(UID, coupon_code):
         "gameCode": "tskgb",
         "couponCode": coupon_code,
         "langCd": "KO_KR",
-        "UID": UID,
+        "pid": UID,
     }
     try:
         res = requests.post(url, json=body, timeout=3)
